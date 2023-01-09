@@ -55,11 +55,11 @@ if(Serial.available()){
    aktif=true;
  }
 }
-if(aktif=false){
+if(aktif==false){
   digitalWrite(led_hijau, HIGH);
   digitalWrite(led_merah, LOW);
 }
-else if(aktif=true){
+else if(aktif==true){
     if(ldr_state > 500){
      if (readRainSensor() > 100) {
     if(kering==false){
